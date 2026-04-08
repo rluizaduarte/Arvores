@@ -5,6 +5,6 @@ public class BST{
 	// construtor
 	public BST(){
 		// inicialmente a arvore ta vazia
-		this.root = null
+		this.root = null;
 	}
 }

@@ -16,9 +16,9 @@ public class InsertionBST {
 	}
 
 	// metodo publico que o user chama
-	public insert(int key){
+	public void insert(int key){
 		// todo o resultado da inserção é atribuido a raiz
-		this.root = insert(this.root, key)
+		this.root = insert(this.root, key);
 	}
 
 	// metodo privado q a implementa a logica
@@ -32,10 +32,10 @@ public class InsertionBST {
 		// caso recursivo: inserir na direita ou na esquerda
 		if(key < node.key){
 			//inserção na esquerda
-			no.left = insert(node.left, key);
-		}else if(key > no.key){
+			node.left = insert(node.left, key);
+		}else if(key > node.key){
 			// inserção na direita
-			no.right = inser(node.right, key);
+			node.right = insert(node.right, key);
 		}
 
 		//retorna o nó inalterado para reconstruir a árvore na volta da recursão

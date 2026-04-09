@@ -18,7 +18,7 @@ public class DepthFirstTraversal{
     public LinkedList<Integer> inOrderList;
     public LinkedList<Integer> postOrderList;
     
-    //construtor
+    // construtor
     public DepthFirstTraversal(){
         this.root = null;
         this.preOrderList = new LinkedList<>();
